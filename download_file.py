@@ -1,8 +1,7 @@
-
-#-*- coding:UTF-8 -*-
-import requests,re, json, sys
+import requests, re, json, sys
 from bs4 import BeautifulSoup
 from urllib import request
+
 
 class video_downloader():
     
@@ -20,7 +19,7 @@ class video_downloader():
         request.urlretrieve(url=url, filename = filename,reporthook=self.Schedule)
 
 if __name__ == '__main__':
-    url = 'http://download.microsoft.com/download/5/6/7/5671A1FE-F11B-4BE9-8076-0595020F3386/Students%20Schedule-03-General%20Template-for-Excel.xlsx'
+    url = 'https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png'
     vd = video_downloader()
     filename = '下载文件'
     print('%s下载中：' % filename)
